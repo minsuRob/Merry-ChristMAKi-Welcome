@@ -1,4 +1,5 @@
 import makiBg from '../assets/maki.jpg'
+import snowImg from '../assets/snow.png'
 import '../App.css'
 
 function Home() {
@@ -9,7 +10,10 @@ function Home() {
 
   return (
     <div className="app" style={{ backgroundImage: `url(${makiBg})` }}>
-      <a href={storeUrl} className="center-btn">Install MAKi</a>
+      <a href={storeUrl} className="center-btn">
+        <img src={snowImg} alt="" className="snow-top" />
+        Install MAKi
+      </a>
     </div>
   )
 }
