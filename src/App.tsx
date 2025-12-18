@@ -4,7 +4,7 @@ import makiBg from './assets/maki.jpg'
 function App() {
   return (
     <div className="app" style={{ backgroundImage: `url(${makiBg})` }}>
-      <button className="center-btn">Enter</button>
+      <button className="center-btn">Install MAKi</button>
     </div>
   )
 }
