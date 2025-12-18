@@ -1,11 +1,15 @@
-import './App.css'
-import makiBg from './assets/maki.jpg'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import QRTablet from './pages/QRTablet'
 
 function App() {
   return (
-    <div className="app" style={{ backgroundImage: `url(${makiBg})` }}>
-      <a href="https://apps.apple.com/kr/app/maki-by-markhub/id6746326048" className="center-btn">Install MAKi</a>
-    </div>
+    <BrowserRouter basename="/Merry-ChristMAKi-Welcome">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/qrtablet" element={<QRTablet />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
